@@ -1,0 +1,266 @@
+body {
+    margin: 0 auto;
+    font-family: 'Smythe', cursive;
+    max-width: 600px;
+} 
+
+header {
+    background: url(images/burger.jpg);
+    background-size: cover;
+    background-position: 50% 65%;
+    padding: 46px;
+    max-height: 167px;
+}
+
+h1 {
+    font-size: 39px;
+    line-height: 24px;
+    color: #FFF;
+}
+
+.subheader {
+    font-size: 22px;
+    line-height: 14px;
+    color: #FFF;
+}
+
+/* GET MENU HTML CSS */
+
+.menu-item-container {
+    display: flex;
+    padding: 0 46px;
+    max-width: 600px;
+    justify-content: space-between;   
+    align-items: center; 
+    margin: 67px 0 51px 0;
+}
+
+.emoji-container {
+    /* border: solid 1px red; */
+    padding: 0;
+    }
+
+.menu-item-emoji {
+    font-size: 80px;
+    text-align: center;
+    margin: 0;
+}
+
+.menu-details-container {
+    /* border: solid 1px limegreen; */
+    flex-grow: 2;
+    padding: 0 30px;
+}
+
+.menu-item-name {
+    font-size: 28px;
+    color: #000;
+    margin: 0;
+}
+
+.menu-item-ingredients {
+    font-size: 16px;
+    color: #8B8B8B;
+    margin: 10px 0;
+}
+
+.menu-item-price {
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+}
+
+.add-btn-container {
+    /* border: solid 1px magenta; */
+    margin-bottom: 40px;
+}
+
+.add-btn {
+    height: 50px;
+    width: 50px;
+    border: solid 1.5px #DEDEDE;
+    border-radius: 50%;
+    background: white;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+}
+
+.add-btn:hover, .add-btn:focus {
+    border: solid 1.5px #000;
+    background: #DEDEDE;
+}
+
+.menu-item-divider {
+    border-bottom: solid 1px #D2D2D2;
+    margin: 0 46px;
+    padding: 0;
+}
+
+/* ORDER SUMMARY CSS */
+
+.order-summary-header {
+    padding-top: 45px;
+}
+
+.order-items-container {
+    margin: 0;
+    padding: 0;
+    /* border: solid 1px red; */
+}
+
+.order-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    /* border: solid 1px blue; */
+}
+
+.order-summary-title {
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+    /* border: 1px solid magenta; */
+    line-height: 28px;
+    margin: 10px 0;
+}
+
+.price-title {
+    font-size: 20px;
+    color: #000;
+    flex-grow: 3;
+    text-align: right;
+    /* border: 1px solid limegreen; */
+    margin: 10px 0;
+}
+
+.remove-item-btn {
+    font-size: 12px;
+    color: #BBB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    background: #FFF;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+.remove-item-btn:hover, .remove-item-btn:focus {
+    color: #000;
+    border-radius: 10%;
+    box-shadow: 0 0 5px #DEDEDE inset;
+    /* background: #DEDEDE; */
+}
+
+.order-summary-divider {
+    border-bottom: solid 1px #000;
+    margin-top: 15px;
+}
+
+.order-total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 15px 0 25px 0;
+    /* border: solid 1px magenta; */
+}
+
+#complete-order-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFF;
+    font-weight: 700;
+    background-color: #16DB99;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 1px 2px #000;
+    width: 508px;
+    height: 60px;
+    margin: 30px auto;
+    display: block;
+}
+
+#complete-order-btn:hover, #complete-order-btn:focus {
+    background-color: #ECFDF5;
+    color: #000;
+}
+
+/* PAYMENT MODAL */
+
+#payment-modal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 20;
+    bottom: 0;
+    border: solid 1px #757575;
+    border-radius: 5px;
+    background-color: #FFF;
+    max-width: 524px;
+    max-height: 542px;
+    margin: 0 auto;
+    box-shadow: 0 0 8px 2px #666;
+}
+
+#payment-modal-header {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 46px auto;
+}
+
+.modal-input {
+    display: block;
+    border: solid 1px #757575;
+    border-radius: 3px;
+    padding: 14px 25px;
+    margin: 24px auto;
+    width: 425px;
+}
+
+#pay-btn {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #16DB99;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 1px 2px #000;
+    width: 475px;
+    height: 72px;
+    margin: 30px auto;
+    display: block;
+}
+
+#pay-btn:hover, #pay-btn:focus {
+    background-color: #ECFDF5;
+    color: #000;
+}
+
+/* ORDER CONFIRMATION */
+
+#order-confirmation-container {
+    color: #065F46;
+    background-color: #ECFDF5;
+    border-radius: 3px;
+    height: 120px;
+    width: 510px;
+    margin: 20px auto;
+}
+
+#order-confirmation-message {
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 50px;
+    text-shadow: 1px 1px 1px #666;
+}
+
+/* UTILITY CSS */
+
+.hidden {
+    display: none;
+}
